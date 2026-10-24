@@ -29,6 +29,8 @@ npm test
 npm start
 ```
 
+Windows 也可以双击 `start.bat` 启动；在该窗口按 Ctrl+C 停止，再运行它即可重启。旧版 `restart.bat`、DSH 启动脚本与旧配置不适用于这套独立桥接。检测到旧版 DSH 配置时，程序会提示从当前示例重新建立配置。
+
 看到“已连接 SnowLuma WebSocket”表示消息入口已连通。可以先用白名单私聊测试，再在白名单群里 @ 机器人测试。修改 `config.json` 后需重启程序；修改 SDR 示例文件后，下一次扫描会自动读取。请勿同时运行其他会回复同一账号消息的桥接程序。
 
 `config.json`、`.env`、`state/`、本地 SDR 标注文件和 `node_modules/` 均被 `.gitignore` 排除。**不要把真实 Key、SnowLuma token、QQ 号或聊天状态复制进示例配置或 README。** 已提交到 Git 历史的秘密不会因为后来加上 `.gitignore` 而消失。
@@ -57,4 +59,4 @@ c ≥ 1.3 × b
 
 ## 许可与致谢
 
-本仓库的桥接代码采用 [MIT 许可证](LICENSE)，受到 [Derpyu520/qq-bridge](https://github.com/Derpyu520/qq-bridge) 的启发；详情见 [第三方声明](THIRD_PARTY_NOTICES.md)。SnowLuma 是需单独安装的第三方程序，采用自己的[源码可见、非商业许可](https://github.com/SnowLuma/SnowLuma/blob/main/LICENSE)，**不受本仓库 MIT 许可证覆盖**。本项目与腾讯、QQ、SnowLuma 和 DeepSeek 均无官方关联。
+本仓库 fork 自 [Derpyu520/qq-bridge](https://github.com/Derpyu520/qq-bridge)，将桥接部分改为独立的 SnowLuma ↔ DeepSeek API 程序。桥接代码沿用 [MIT 许可证](LICENSE)，保留原项目的版权声明；详情见 [第三方声明](THIRD_PARTY_NOTICES.md)。SnowLuma 是需单独安装的第三方程序，采用自己的[源码可见、非商业许可](https://github.com/SnowLuma/SnowLuma/blob/main/LICENSE)，**不受本仓库 MIT 许可证覆盖**。本项目与腾讯、QQ、SnowLuma 和 DeepSeek 均无官方关联。

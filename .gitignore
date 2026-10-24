@@ -12,3 +12,15 @@ sdr-ratings.json
 *.zip
 .DS_Store
 Thumbs.db
+
+# Keep local probes and private materials out of future commits.
+audio/
+scripts/privacy-rules.json
+docs/audits/
+docs/design/
+docs/legacy/
+docs/research/
+docs/qq-bridge-PUBLISH_PLAN.md
+docs/qq-bridge-SECURITY_AUDIT.md
+docs/guides/PROJECT_GUIDE.md
+docs/guides/VOICE.md

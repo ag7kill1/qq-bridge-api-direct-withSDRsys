@@ -1,6 +1,6 @@
 # Third-party notices
 
-This project was inspired by [Derpyu520/qq-bridge](https://github.com/Derpyu520/qq-bridge), which is licensed under MIT. Its copyright notice is:
+This fork is based on [Derpyu520/qq-bridge](https://github.com/Derpyu520/qq-bridge), which is licensed under MIT. Its copyright notice is retained in this repository's LICENSE:
 
 > Copyright (c) 2026 Derpyu520 and qq-bridge / QSH contributors
 

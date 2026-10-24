@@ -8,7 +8,7 @@
   "engines": { "node": ">=22.13.0" },
   "scripts": {
     "start": "node src/index.js",
-    "test": "node --test"
+    "test": "node --test src/core.test.js src/group-sdr.test.js src/group-style.test.js src/integration.test.js src/startup.test.js"
   },
   "dependencies": {
     "undici": "^7.0.0",
